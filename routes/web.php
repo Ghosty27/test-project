@@ -17,14 +17,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/user/{id}/{name}', function ($id, $name) {
-    return 'ID: '.$id.'. Name: '.$name;
-});
-
-Route::get('/review', function () {
-    return view('review');
+Route::get('/gallery', function () {
+    return view('gallery');
 });
